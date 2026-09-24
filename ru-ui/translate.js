@@ -231,7 +231,124 @@
     "Input Video Strength": "Сила входного видео",
     "Audio Option": "Настройка аудио",
     "➕ Add": "➕ Добавить",
+    "Enhance Prompt using a LLM": "Улучшить промпт через LLM",
+    "Based on Text Prompt (No Images Selected)": "На основе текстового промпта (без изображений)",
+    "Based on Text Prompt and Images": "На основе текста и изображений",
+    "Based on Text Prompt Content": "На основе содержимого текстового промпта",
+    "End Images": "Конечные изображения",
+    "Injected Frames": "Внедрённые кадры",
+    "Main Ref. Image": "Основное реф. изображение",
+    "Ref. Images": "Реф. изображения",
+    "Ref Image": "Реф. изображение",
+    "Aligned to the beginning of the First Window of the new Video Sample": "Выровнено по началу первого окна нового видео",
+    "Aligned to the beginning of the Source Video": "Выровнено по началу исходного видео",
+    "Always OFF": "Всегда выкл.",
+    "Always ON": "Всегда вкл.",
+    "Applying Audio Post Processing": "Применяется постобработка звука…",
+    "Applying Audio Remuxing": "Применяется ремукс аудио…",
+    "Applying Media Post Processing": "Применяется постобработка медиа…",
+    "Auto (ON if Video longer than 5s)": "Авто (вкл., если видео длиннее 5с)",
+    "Auto fps: Control Video if any, or Model Default": "Авто fps: как у контрольного видео, иначе по умолчанию модели",
+    "Auto fps: Source Video if any, or Control Video if any, or Model Default": "Авто fps: как у исходного видео, иначе как у контрольного, иначе по умолчанию модели",
+    "Auto fps: Source Video if any, or Model Default": "Авто fps: как у исходного видео, иначе по умолчанию модели",
+    "Auto: Best available (sage2 > sage > sdpa)": "Авто: лучший доступный (sage2 > sage > sdpa)",
+    "Control Length": "Длина по контролю",
+    "Control Video fps": "FPS контрольного видео",
+    "Default Attention Mode": "Attention-режим по умолчанию",
+    "Disabled": "Отключено",
+    "Enabled with P1-Norm": "Включено с P1-Norm",
+    "Enabled with P2-Norm": "Включено с P2-Norm",
+    "First Block Cache": "Кэш первого блока",
+    "Fit into a 16:9 Box": "Вписать в рамку 16:9",
+    "Fit into a 1:1 Box": "Вписать в рамку 1:1",
+    "Fit into a 21:9 Box": "Вписать в рамку 21:9",
+    "Fit into a 3:4 Box": "Вписать в рамку 3:4",
+    "Fit into a 4:3 Box": "Вписать в рамку 4:3",
+    "Fit into a 9:16 Box": "Вписать в рамку 9:16",
+    "Fit into a 9:21 Box": "Вписать в рамку 9:21",
+    "Generate every combination of images and texts": "Сгенерировать все комбинации изображений и текстов",
+    "Generating...": "Генерация…",
+    "Keep Backgrounds behind all Reference Images": "Сохранить фон за всеми референсными изображениями",
+    "Manual Expansion": "Ручное расширение",
+    "Match images and text prompts": "Сопоставить изображения и текстовые промпты",
+    "None": "Нет",
+    "Nothing": "Ничего",
+    "OFF": "Выкл.",
+    "ON": "Вкл.",
+    "One Phase": "Одна фаза",
+    "Two Phases": "Две фазы",
+    "Two Phases with Tiling": "Две фазы с тайлингом",
+    "Three Phases": "Три фазы",
+    "People / Objects": "Люди / объекты",
+    "Phase 1-2 transition": "Переход фаза 1→2",
+    "Phase 2-3 transition": "Переход фаза 2→3",
+    "Please enter a name for a Lora Preset / Settings file": "Введите название пресета LoRA / файла настроек",
+    "Profile 1, HighRAM_HighVRAM: at least 64 GB of RAM and 24 GB of VRAM, the fastest for short videos with a RTX 3090 / RTX 4090": "Профиль 1, HighRAM_HighVRAM: минимум 64 ГБ RAM и 24 ГБ VRAM — самый быстрый для коротких видео на RTX 3090 / RTX 4090",
+    "Profile 3+, VeryLowRAM_HighVRAM: at least 32 GB of RAM and 24 GB of VRAM, variant of Profile 3 that won't used Reserved Memory to reduce RAM usage": "Профиль 3+, VeryLowRAM_HighVRAM: минимум 32 ГБ RAM и 24 ГБ VRAM — вариант профиля 3 без резервируемой памяти для снижения расхода RAM",
+    "Profile 3, LowRAM_HighVRAM: at least 32 GB of RAM and 24 GB of VRAM, adapted for RTX 3090 / RTX 4090 with limited RAM for good speed short video": "Профиль 3, LowRAM_HighVRAM: минимум 32 ГБ RAM и 24 ГБ VRAM — для RTX 3090/4090 с ограниченной RAM, хорошая скорость на коротких видео",
+    "Profile 4+, LowRAM_LowVRAM+: at least 32 GB of RAM and 12 GB of VRAM, variant of Profile 4, slightly slower but needs less VRAM": "Профиль 4+, LowRAM_LowVRAM+: минимум 32 ГБ RAM и 12 ГБ VRAM — вариант профиля 4, чуть медленнее, но нужно меньше VRAM",
+    "Profile 4, LowRAM_LowVRAM (Recommended): at least 32 GB of RAM and 12 GB of VRAM, if you have little VRAM or want to generate longer videos": "Профиль 4, LowRAM_LowVRAM (рекомендуется): минимум 32 ГБ RAM и 12 ГБ VRAM — если мало VRAM или нужны более длинные видео",
+    "Profile 5, VerylowRAM_LowVRAM (Fail safe): at least 24 GB of RAM and 10 GB of VRAM, if you don't have much it won't be fast but maybe it will work": "Профиль 5, VerylowRAM_LowVRAM (аварийный): минимум 24 ГБ RAM и 10 ГБ VRAM — если совсем мало ресурсов, будет медленно, но может заработать",
+    "Save All the Settings except Media": "Сохранить все настройки, кроме медиа",
+    "Save All the Settings including Media": "Сохранить все настройки, включая медиа",
+    "Save Loras & Only Prompt Comments": "Сохранить LoRA и только комментарии промпта",
+    "Save Only Loras & Full Prompt": "Сохранить только LoRA и полный промпт",
+    "Shortest generation, keep only the First Frame": "Кратчайшая генерация, оставить только первый кадр",
+    "Skip Layer Guidance": "Пропуск наведения по слоям (Skip Layer Guidance)",
+    "Source Video fps": "FPS исходного видео",
+    "Start": "Начало",
+    "around x1.5 speed up": "ускорение примерно x1.5",
+    "around x1.75 speed up": "ускорение примерно x1.75",
+    "around x2 speed up": "ускорение примерно x2",
+    "around x2.25 speed up": "ускорение примерно x2.25",
+    "around x2.5 speed up": "ускорение примерно x2.5",
+    "sdpa: Default, always available": "sdpa: по умолчанию, всегда доступен",
+    "start image": "стартовое изображение",
+    "Top x": "Сверху x",
+    "Bottom x": "Снизу x",
+    "Left x": "Слева x",
+    "Right x": "Справа x",
+    "Num. of Generated Audio Files per Prompt": "Кол-во аудиофайлов на промпт",
+    "Num. of Generated Videos per Prompt": "Кол-во видео на промпт",
+    "Override Memory Profile": "Переопределить профиль памяти",
+    "Override Attention Mode": "Переопределить режим внимания (Attention Mode)",
+    "Video": "Видео",
+    "Prompts (all the Lines are Parts of the Same Prompt, # lines = comments, ! lines = macros)": "Промпты (все строки — части одного промпта, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (all the Lines are Parts of the Same Prompt, # lines = comments)": "Промпты (все строки — части одного промпта, строки с # — комментарии)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will be used for a Sliding Window, # lines = comments, ! lines = macros)": "Промпты (каждый абзац промпта, разделённый пустой строкой, будет использован для скользящего окна (Sliding Window), строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will be used for a Sliding Window, # lines = comments)": "Промпты (каждый абзац промпта, разделённый пустой строкой, будет использован для скользящего окна (Sliding Window), строки с # — комментарии)",
+    "Prompts (each Line of Prompt will be used for a Sliding Window, # lines = comments, ! lines = macros)": "Промпты (каждая строка промпта будет использована для скользящего окна (Sliding Window), строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Line of Prompt will be used for a Sliding Window, # lines = comments)": "Промпты (каждая строка промпта будет использована для скользящего окна (Sliding Window), строки с # — комментарии)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will generate a new Image, # lines = comments, ! lines = macros)": "Промпты (каждый абзац промпта, разделённый пустой строкой, создаст новое изображение, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will generate a new Image, # lines = comments)": "Промпты (каждый абзац промпта, разделённый пустой строкой, создаст новое изображение, строки с # — комментарии)",
+    "Prompts (each Line of Prompt will generate a new Image, # lines = comments, ! lines = macros)": "Промпты (каждая строка промпта создаст новое изображение, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Line of Prompt will generate a new Image, # lines = comments)": "Промпты (каждая строка промпта создаст новое изображение, строки с # — комментарии)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will generate a new Audio File, # lines = comments, ! lines = macros)": "Промпты (каждый абзац промпта, разделённый пустой строкой, создаст новое аудио, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will generate a new Audio File, # lines = comments)": "Промпты (каждый абзац промпта, разделённый пустой строкой, создаст новое аудио, строки с # — комментарии)",
+    "Prompts (each Line of Prompt will generate a new Audio File, # lines = comments, ! lines = macros)": "Промпты (каждая строка промпта создаст новое аудио, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Line of Prompt will generate a new Audio File, # lines = comments)": "Промпты (каждая строка промпта создаст новое аудио, строки с # — комментарии)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will generate a new Video, # lines = comments, ! lines = macros)": "Промпты (каждый абзац промпта, разделённый пустой строкой, создаст новое видео, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Paragraph of Prompt separated by an Empty Line will generate a new Video, # lines = comments)": "Промпты (каждый абзац промпта, разделённый пустой строкой, создаст новое видео, строки с # — комментарии)",
+    "Prompts (each Line of Prompt will generate a new Video, # lines = comments, ! lines = macros)": "Промпты (каждая строка промпта создаст новое видео, строки с # — комментарии, строки с ! — макросы)",
+    "Prompts (each Line of Prompt will generate a new Video, # lines = comments)": "Промпты (каждая строка промпта создаст новое видео, строки с # — комментарии)",
   };
+
+  // Подписи с "живыми" цифрами (длительность, fps) — точным совпадением не поймать,
+  // переводим по regex, сохраняя захваченные числа как есть.
+  var REGEX_MAP = [
+    {
+      re: /^Number of frames \((\d+) frames = 1s\), current duration: ([\d.]+)s$/,
+      to: function (m) {
+        return "Количество кадров (" + m[1] + " кадров = 1с), текущая длительность: " + m[2] + "с";
+      },
+    },
+    {
+      re: /^Override Frames Per Second \(model default=(\d+) fps\)$/,
+      to: function (m) {
+        return "Переопределить FPS (по умолчанию модели: " + m[1] + " fps)";
+      },
+    },
+  ];
 
   // Фильтр семейств моделей рендерится как HTML-иконки: видимого текста нет,
   // текст живёт только в title/aria-label. Ключ — стабильный data-model-output-filter.
@@ -306,8 +423,18 @@
     for (var i = 0; i < nodes.length; i++) {
       var tn = nodes[i];
       var trimmed = tn.nodeValue.trim();
-      if (trimmed && TEXT_MAP.hasOwnProperty(trimmed)) {
+      if (!trimmed) continue;
+      if (TEXT_MAP.hasOwnProperty(trimmed)) {
         tn.nodeValue = tn.nodeValue.replace(trimmed, TEXT_MAP[trimmed]);
+        continue;
+      }
+      for (var r = 0; r < REGEX_MAP.length; r++) {
+        var rule = REGEX_MAP[r];
+        var match = trimmed.match(rule.re);
+        if (match) {
+          tn.nodeValue = tn.nodeValue.replace(trimmed, rule.to(match));
+          break;
+        }
       }
     }
   }
