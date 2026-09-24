@@ -367,17 +367,6 @@
     wangp_model_tool_unload: "Выгрузить модель из памяти GPU",
   };
 
-  var GUIDE_HTML =
-    '<b>Как выбрать модель:</b> слева — семейство (например, Wan2.1/2.2), справа — конкретная версия ' +
-    "(размер вроде 14B/5B, тип T2V/I2V и т.д.). Чем больше цифра — тем выше качество, но дольше генерация " +
-    "и больше нужно видеопамяти. Наведи курсор на цветные иконки слева, чтобы увидеть подсказки по фильтру.";
-
-  var WORKFLOW_GUIDE_HTML =
-    "<b>Как сделать видео — выбери один из режимов ниже:</b><br>" +
-    "• <b>Из текста:</b> оставь «Новое видео», убедись что открыта вкладка «Текст в видео», впиши описание в поле промпта ниже и нажми «Сгенерировать».<br>" +
-    "• <b>Из картинки:</b> выбери «Начать с изображения» (появляется, если модель это умеет) и загрузи картинку — из неё оживёт видео.<br>" +
-    "• <b>Продолжить готовое видео:</b> «Продолжить видео» — загрузить своё видео и продлить его; «Продолжить последнее видео» — продолжить то, что уже сгенерировано здесь.";
-
   function translateFamilyFilter(root) {
     var buttons = root.querySelectorAll("#wangp_model_output_filter button[data-model-output-filter]");
     for (var i = 0; i < buttons.length; i++) {
@@ -439,38 +428,11 @@
     }
   }
 
-  function insertGuide(root) {
-    if (root.querySelector(".ru-model-guide")) return;
-    var filterBlock = document.getElementById("wangp_model_output_filter");
-    if (!filterBlock) return;
-    var rowAncestor = filterBlock.closest(".row") || filterBlock.parentElement;
-    if (!rowAncestor || !rowAncestor.parentElement) return;
-    var box = document.createElement("div");
-    box.className = "ru-model-guide";
-    box.innerHTML = GUIDE_HTML;
-    rowAncestor.parentElement.insertBefore(box, rowAncestor.nextSibling);
-  }
-
-  function insertWorkflowGuide(root) {
-    var labels = root.querySelectorAll('[data-testid="New Video-radio-label"]');
-    for (var i = 0; i < labels.length; i++) {
-      var block = labels[i].closest(".block");
-      if (!block || !block.parentElement) continue;
-      if (block.parentElement.querySelector(":scope > .ru-workflow-guide")) continue;
-      var box = document.createElement("div");
-      box.className = "ru-workflow-guide";
-      box.innerHTML = WORKFLOW_GUIDE_HTML;
-      block.parentElement.insertBefore(box, block.nextSibling);
-    }
-  }
-
   function runPass() {
     translateTabs(document.body);
     translateText(document.body);
     translateFamilyFilter(document.body);
     translateToolIcons(document.body);
-    insertGuide(document.body);
-    insertWorkflowGuide(document.body);
   }
 
   var debounceTimer = null;
